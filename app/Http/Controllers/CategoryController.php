@@ -31,6 +31,11 @@ public function store(StoreCategoryRequest $request)
         ->with('success', "Kategori \"{$validated['nama_kategori']}\" berhasil ditambahkan.");
 }
 
+    public function create()
+    {
+        return view('categories.create');
+    }
+
 public function edit(string $id)
 {
     $category = Category::findOrFail($id);
