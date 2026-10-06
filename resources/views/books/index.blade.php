@@ -10,7 +10,7 @@
     <table>
         <thead>
             <tr>
-                <th>ID</th>
+                <th>Kategori</th>
                 <th>Judul</th>
                 <th>Penulis</th>
                 <th>Penerbit</th>
@@ -29,7 +29,7 @@
                     <td>{{ $book['penerbit'] }}</td>
                     <td>{{ $book['tahun_terbit'] }}</td>
                     <td>{{ $book['stok'] }}</td>
-                    <td>{{ $book['category_id'] }}</td>
+                    <td>{{ $book['category']['nama_kategori'] }}</td>
                     <td>
                         <a href="{{ route('books.show', $book['id']) }}">Detail</a>
                         |
